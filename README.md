@@ -18,7 +18,7 @@ This project is designed to impart a fundamental understanding of Active Directo
 
 <h2>Prerequisites</h2>
 
-- <a href="https://github.com/franciscovfonseca/Active-Directory-and-Azure-Setup/blob/main/README.md"> Preliminary Setup for Active Directory and Network Traffic Analysis between Azure VMs </a>
+<a href="https://github.com/franciscovfonseca/Active-Directory-and-Azure-Setup/blob/main/README.md"> Preliminary Setup for Active Directory and Network Traffic Analysis between Azure VMs </a>
 
 <br>
 
@@ -290,10 +290,10 @@ Now logout of the **Domain Controller** and re-login as the User just created.
 
 <h2></h2>
 
-<h3>4️⃣ Join Client-01 to domain </h3>
+<h3>4️⃣ Join Client-01 to Domain </h3>
 <br>
 
-For Client-01 to join the domain, we first have to set it’s DNS server as DC-01’s private address.</strong></p>
+For *Client-01* to join the *Domain Controller*, we first have to set its **DNS Server** as **DC-01’s Private IP Address**.
 
 In the Azure Portal, select Client-01 -> Networking -> Network interface and click on DNS servers
 
