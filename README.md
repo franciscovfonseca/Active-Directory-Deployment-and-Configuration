@@ -297,7 +297,7 @@ For *Client-01* to join the *Domain Controller*, we first have to set its **DNS 
 
 First, in the *Azure Portal*, go to the **Client VM**, then go to the ***Networking*** tab and click on the ***Network Interface***.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/f721f2cd-57b4-4859-8d4f-ef7458fc836c" height="60%" width="60%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/5a14a506-0344-4648-8895-d68ea33eea6e" height="60%" width="60%" alt="9"/><br />
 <br>
 
 Next, go to the **DNS Servers** tab and create a ***custom DNS Server***.
@@ -306,33 +306,33 @@ Add a custom server using the *Domain Controller's Private IP address*.
 
 Example Below:
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/0bffe71f-6738-4262-8fbc-b7cfe1bcb396" height="60%" width="60%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/8f9b46a3-a80d-4f84-8f9f-c42cd108962c" height="60%" width="60%" alt="9"/><br />
 <br>
 
 Now click ***Save***.
 
 Next go back to the **Client VM** and click ***Restart*** in the *Overview tab*. 
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/a8b568af-86cc-483e-a80c-0bab61f249e2" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/9d51c37d-195d-4161-a1f6-625fefa1d184" height="80%" width="80%" alt="9"/><br />
 <br>
 
 Once the Client is restarted:
 
 🡪 Login to the Client with ***Remote Desktop*** as the **Admin Account** created (***Tucker Smith*** in this case).
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/7dc19edc-c69c-4b8b-9c84-4afea551f703" height="50%" width="50%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/3cd12607-36c3-4817-9de9-32c86bfe7ad6" height="50%" width="50%" alt="9"/><br />
 <br>
 
 After login in:
 
 Go to **Settings 🡪 System 🡪 About** and click on ***Rename this PC (advanced)***.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/19aec300-b816-4a43-81d9-0b26828c90ab" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/f5ade15e-9e20-4376-9e73-24975e9dc514" height="80%" width="80%" alt="9"/><br />
 <br>
 
 Now Click on "***Change...***"
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/425dde87-0b5a-45f5-87f2-9eae099c65bd" height="50%" width="50%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/0b155ebb-4ddd-4c69-b53e-21db7fdfe283" height="50%" width="50%" alt="9"/><br />
 <br>
 
 Now check the bubble ⦿ next to ***Domain*** then type in the *Domain Name* (**Your own domain name**).
@@ -341,9 +341,9 @@ There should be a window that pops up for a login 🡪 Use the admin previously 
 
 Example below:
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/697f46b6-b338-4e0a-a037-f14521d63f45" height="80%" width="80%" alt="9"/><br 
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/13b2eb4c-9274-481f-92b2-f9b1258136d4" height="80%" width="80%" alt="9"/><br 
                                                                                                                                                                
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/a2dcdf55-a180-4731-9088-384dd8eb3cfb" height="40%" width="40%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/9584e704-762c-4c98-9095-736d8daba619" height="40%" width="40%" alt="9"/><br />
 
 ✅ Success.
 
@@ -352,8 +352,10 @@ The VM will now restart after a short period.
 <br>
 <br>
 
+<h2></h2>
 
-<h3>&#9316; Setup Remote Desktop for non-administrative users </h3>
+
+<h3>5️⃣ Setup Remote Desktop for Non-Administrative Users </h3>
 
 - Log back into Client-01 using jane_admin and open Settings > Remote Desktop> User Accounts and click “Select users that can remotely access this PC”
 - Add Domain Users
