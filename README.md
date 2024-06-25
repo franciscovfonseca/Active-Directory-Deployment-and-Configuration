@@ -127,6 +127,15 @@ Once it says "*Configuration required. Installation succeeded on (**Your DC name
 <br>
 
 
+<h2></h2>
+<br />
+
+
+<h3>2️⃣ Promote DC-01 to Domain Controller </h3>
+
+- Once the installation is done, notice the flag on the top left of the Server Manager
+- Click on the flag and promote DC-01 to Domain Controller.
+
 Towards the top-right corner of the *Server Manager* window, there will be a flag and a yellow triangle with a ⚠️ symbol 🡪 Click on that.
 
 <img width="736" alt="AD-setup" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/bb534e6b-0072-420a-9f74-c03bbcc77016">
@@ -184,9 +193,14 @@ Now click *Install*.
 
 After Installing, the VM will rebooted.
 
-Once it is rebooted 🡪 Log back into the Domain Controller with the *Domain Name* and the *Username*.<br>
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/e597573e-b3fc-4d4e-b15a-5b7bd4a29f25" height="55%" width="55%" alt="9"/><br />
+
 <br>
-Example below:
+<br>
+<br>
+
+Once it is rebooted 🡪 Log back in to the **Domain Controller** with the ***Domain Name*** and the ***Username*** and ***Password*** that we had created for the DC in the previous turorial (in Azure).<br>
+
 
 <img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/e597573e-b3fc-4d4e-b15a-5b7bd4a29f25" height="55%" width="55%" alt="9"/><br />
 
@@ -196,37 +210,12 @@ Example below:
 <br>
 <br>
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-<h3>&#9313; Promote DC-01 to Domain Controller </h3>
-
-- Once the installation is done, notice the flag on the top left of the Server Manager
-- Click on the flag and promote DC-01 to Domain Controller.
-
-<img width="242" alt="notif" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/3cb91456-cc00-4e70-8ea2-2b54a5dc8137">
+<h2></h2>
+<br />
 
 
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
--  We will now add a new Forest and set the Root domain name to “mydomain.com”
-<p>
-<img width="565" alt="my domain" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/e4d06e9a-a5a4-4e8b-b464-b90ac041cbc8"> </p>
-  
-- Finish setup and restart DC-01
-- Log back in with “your username"@mydomain.com
-
-
-
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-<h3>&#9314; Creating an Admin in Active Directory </h3>
+<h3>3️⃣ Creating an Admin in Active Directory </h3>
 
 - Once DC-01 has rebooted, click on tools and select Active Directory Users and Computers
 - Right click on mydomain.com and select new and click on Organizational Unit
