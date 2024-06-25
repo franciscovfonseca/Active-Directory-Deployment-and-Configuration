@@ -130,17 +130,16 @@ Once it says "***Configuration required. Installation succeeded on DC.***" 🡪 
 
 
 <h2></h2>
-<br />
 
 
 <h3>2️⃣ Promote DC-01 to Domain Controller </h3>
 
-- Once the installation is done, notice the flag on the top left of the Server Manager
-- Click on the flag and promote DC-01 to Domain Controller.
+<br>
+
 
 Towards the top-right corner of the *Server Manager* window, there will be a flag and a yellow triangle with a ⚠️ symbol 🡪 Click on that.
 
-<img width="736" alt="AD-setup" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/bb534e6b-0072-420a-9f74-c03bbcc77016">
+<img width="736" alt="AD-setup" src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/53424c41-3b9c-4817-ae15-895923b629fa">
 
 <br>
 <br>
@@ -150,7 +149,7 @@ Towards the top-right corner of the *Server Manager* window, there will be a fla
 
 Then click on "***Promote the server to a domain controller***".
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/a067d615-f065-479a-97ef-65a23609406d" height="40%" width="40%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/d1e0b1af-0216-4184-9364-8152df7e5b1d" height="40%" width="40%" alt="9"/><br />
 
 <br>
 <br>
@@ -162,7 +161,7 @@ Check the bubble ◉ next to "*Add a new forest*"<br>
 <br>
 After that give it a domain name (example in the image below) and then click *Next*.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/e1bfed73-b689-4cbf-a950-56f6ee5341e9" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/ce5d0f58-1030-44bb-9661-12044740ccf7" height="80%" width="80%" alt="9"/><br />
 
 <br>
 <br>
@@ -173,7 +172,7 @@ Give it a DSRM password (required but won't be used in this tutorial).
 
 Click *Next*.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/04a4531f-502e-493e-a7cd-2264ccad85d8" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/351b2112-e08b-4d91-b078-2793e7dfb5f5" height="80%" width="80%" alt="9"/><br />
 
 <br>
 <br>
@@ -186,7 +185,7 @@ Once it is made, click *Next* until reaching the **Prerequisites Check** tab, th
 
 Now click *Install*.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/04a4531f-502e-493e-a7cd-2264ccad85d8" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/a07d4751-2dbc-41a1-bbbf-8522cf0353e9" height="80%" width="80%" alt="9"/><br />
 
 <br>
 <br>
@@ -195,7 +194,7 @@ Now click *Install*.
 
 After Installing, the VM will rebooted.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/e597573e-b3fc-4d4e-b15a-5b7bd4a29f25" height="55%" width="55%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/5215b104-2afa-487d-a720-bc9fee60e1eb" height="55%" width="55%" alt="9"/><br />
 
 <br>
 <br>
@@ -204,7 +203,7 @@ After Installing, the VM will rebooted.
 Once it is rebooted 🡪 Log back in to the **Domain Controller** with the ***Domain Name*** and the ***Username*** and ***Password*** that we had created for the DC in the previous turorial (in Azure).<br>
 
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/e597573e-b3fc-4d4e-b15a-5b7bd4a29f25" height="55%" width="55%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/7d338e1e-ead5-4943-9921-b00d8e732a09" height="55%" width="55%" alt="9"/><br />
 
 
 
@@ -213,65 +212,90 @@ Once it is rebooted 🡪 Log back in to the **Domain Controller** with the ***Do
 <br>
 
 <h2></h2>
-<br />
-
 
 
 <h3>3️⃣ Creating an Admin in Active Directory </h3>
+<br>
 
-- Once DC-01 has rebooted, click on tools and select Active Directory Users and Computers
-- Right click on mydomain.com and select new and click on Organizational Unit
-<img width="438" alt="Users" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/23db8c79-84f4-4e6d-befe-77505518cb05">
+Once logged in: using Server Manager 🡪 click on **Tools** in the top-right corner.
+
+Then click on ***Active Directory Users and Computers***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/06b9f07d-ead5-462f-8ffc-fde5075740dd" height="70%" width="70%" alt="9"/><br />
+<br>
+
+In the *Domain Container* 🡪 Create a new **Organizational Unit**
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/316049aa-5956-4b2c-84f5-e0e14248a729" height="80%" width="80%" alt="9"/><br />
+<br>
+
+Name the Organizational Unit "***_ADMINS***", uncheck the box ⬜ "*Protect container from accidental deletion*" then click ***OK***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/c89f59a5-ad03-4000-a0f7-d5b58008a22e" height="40%" width="40%" alt="9"/><br />
+<br>
+
+In the **_ADMINS** tab, create a *New* 🡪 *User*.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/405988b7-1565-4060-ad2f-e784c5702956" height="80%" width="80%" alt="9"/><br />
+<br>
+
+Name this anything 🡪 Just remember the **User** and **Password**.
+
+Uncheck the box ☐ that is next to "*User must change password at next logon*" 🡪 This won't be necessary.
+
+Click ***Next*** then click ***Finish***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/016403b3-f372-4d6b-b753-48c30bddf2bb" height="50%" width="50%" alt="9"/><br />
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/11f58d5d-834b-4304-9039-4e1ed8815fa0" height="50%" width="50%" alt="9"/><br />
+<br>
+
+Now add this User to the ***Domain Admins** security group*.
+
+Right-click on the User created, then click ***Properties***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/520c50e9-1012-42a4-8efa-569c4b3802d0" height="80%" width="80%" alt="9"/><br />
+<br>
 
 
+Click on the ***Members of*** tab, then click ***Add***. 
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/959c9d54-6f07-4f6a-aa4d-207f10c295df" height="50%" width="50%" alt="9"/><br />
+<br>
+
+Type ***domain*** in the box under "*Enter the object names to select*" 🡪 then click ***Check Names***. 
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/127acebe-b1dd-47ef-8028-2dec15ae8cd8" height="60%" width="60%" alt="9"/><br />
+<br>
+
+Choose the ***Domain Admins*** option then click ***OK***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/60675433-14d0-47f0-8b92-c380b109f2b4" height="80%" width="80%" alt="9"/><br />
+<br>
+
+Now, click ***Apply***.
+
+✅ The User has successfully been added to the Domain Admins security group 🡪 click ***OK***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/b1818229-aa07-4a41-9d68-9ec441077b2b" height="50%" width="50%" alt="9"/><br />
+<br>
+
+
+Now logout of the **Domain Controller** and re-login as the User just created.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/dced46db-8caf-4e97-86c4-868a0d6e226c" height="50%" width="50%" alt="9"/><br />
 <br>
 <br>
 <br>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
 
-<p><strong> We will be creating an OU named _EMPLOYEES and _ADMINS </strong></p>
+<h2></h2>
 
-<img width="450" alt="admins" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/d64f8f3b-130b-4156-bc08-b16f7b21fc89">
+<h3>4️⃣ Join Client-01 to domain </h3>
+<br>
 
+For Client-01 to join the domain, we first have to set it’s DNS server as DC-01’s private address.</strong></p>
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-<p><strong>Right click on Users and create a new user named Jane Doe with the username jane_admin</strong></p>
-
-<img width="323" alt="jane doe" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/5d8f782a-145a-404b-bc83-7a6721b3728d">
-
-
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-<p><strong>Now we will turn Jane Doe into an admin by right clicking her name and adding her to the “Domain Admins” Security Group</strong></p>
-
-<img width="412" alt="add to group" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/08175b12-7a59-4030-b5ef-6ef1983ac6e7">
-
-
-
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-<p><strong>Logout of DC-01 and log back in with Jane Doe’s credentials</strong></p>
-
-<img width="337" alt="jane login" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/751f9854-2aa5-4f94-b641-b355e77a2a32">
-
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-
-<h3>&#9315; Join Client-01 to domain </h3>
-
-<p><strong> For Client-01 to join the domain, we first have to set it’s DNS server as DC-01’s private address.</strong></p>
-
-- In the Azure Portal, select Client-01 -> Networking -> Network interface and click on DNS servers
+In the Azure Portal, select Client-01 -> Networking -> Network interface and click on DNS servers
 
 <img width="735" alt="dns servers" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/13292c41-67f1-4212-95c4-084ac2ec0751">
 
