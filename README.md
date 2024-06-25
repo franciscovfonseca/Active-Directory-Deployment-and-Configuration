@@ -203,7 +203,7 @@ After Installing, the VM will rebooted.
 Once it is rebooted 🡪 Log back in to the **Domain Controller** with the ***Domain Name*** and the ***Username*** and ***Password*** that we had created for the DC in the previous turorial (in Azure).<br>
 
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/7d338e1e-ead5-4943-9921-b00d8e732a09" height="55%" width="55%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/1da11dd5-3fbb-45a0-a86a-f9763e0872f9" height="55%" width="55%" alt="9"/><br />
 
 
 
@@ -283,7 +283,7 @@ Now, click ***Apply***.
 
 Now logout of the **Domain Controller** and re-login as the **User** just created (***Tucker Smith***).
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/dced46db-8caf-4e97-86c4-868a0d6e226c" height="50%" width="50%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/8410c255-bde4-4019-b2ef-6bd47f73dc75" height="50%" width="50%" alt="9"/><br />
 <br>
 <br>
 <br>
