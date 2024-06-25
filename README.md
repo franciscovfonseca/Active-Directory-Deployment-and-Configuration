@@ -81,7 +81,7 @@ This project is designed to impart a fundamental understanding of Active Directo
 
 Go to the **Domain Controller DC-01** and in ***Server Manager*** dashboard click on ***Add roles and features***.
 
-<img width="736" alt="AD-setup" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/bb534e6b-0072-420a-9f74-c03bbcc77016">
+<img width="736" alt="AD-setup" src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/6b2d8467-b11b-4e6e-9041-80263bd1874b">
 
 <br>
 <br>
@@ -90,7 +90,7 @@ Go to the **Domain Controller DC-01** and in ***Server Manager*** dashboard clic
 
 Click ***Next*** until reaching the ***Server Roles*** section.
 
-<img width="736" alt="AD-setup" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/bb534e6b-0072-420a-9f74-c03bbcc77016">
+<img width="736" alt="AD-setup" src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/3576aa91-f8ba-4f69-b6af-62605b2763af">
 
 <br>
 <br>
@@ -100,27 +100,29 @@ Click ***Next*** until reaching the ***Server Roles*** section.
 
 Check the box ⬜ next to ***Active Directory Domain Services*** then ***Add Features***.
 
-<img width="736" alt="AD-setup" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/bb534e6b-0072-420a-9f74-c03bbcc77016">
+<img width="736" alt="AD-setup" src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/7f80f91b-b01f-45fa-bd54-668c4e777847">
 
 <br>
 <br>
 <br>
 
 
-Click Next until reaching the ***Confirmation*** tab then click ***Install***.
+Click *Next* until reaching the ***Confirmation*** tab then click ***Install***.
 
-<img width="736" alt="AD-setup" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/bb534e6b-0072-420a-9f74-c03bbcc77016">
+<img width="736" alt="AD-setup" src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/8bf52f7a-944c-4a36-84c6-991f7fd7c6dc">
 
-<br>
 <br>
 <br>
 
 
 It may take a while to install.
+<br>
+<br>
 
-Once it says "*Configuration required. Installation succeeded on (**Your DC name here**)*" 🡪 Click ***Close***.
 
-<img width="736" alt="AD-setup" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/bb534e6b-0072-420a-9f74-c03bbcc77016">
+Once it says "***Configuration required. Installation succeeded on DC.***" 🡪 Click ***Close***.
+
+<img width="736" alt="AD-setup" src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/93374b1a-1dbc-4b86-bba6-37e7a9cdd693">
 
 <br>
 <br>
