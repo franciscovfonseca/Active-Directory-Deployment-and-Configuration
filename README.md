@@ -281,7 +281,7 @@ Now, click ***Apply***.
 <br>
 
 
-Now logout of the **Domain Controller** and re-login as the User just created.
+Now logout of the **Domain Controller** and re-login as the **User** just created (***Tucker Smith***).
 
 <img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/dced46db-8caf-4e97-86c4-868a0d6e226c" height="50%" width="50%" alt="9"/><br />
 <br>
@@ -295,36 +295,63 @@ Now logout of the **Domain Controller** and re-login as the User just created.
 
 For *Client-01* to join the *Domain Controller*, we first have to set its **DNS Server** as **DC-01’s Private IP Address**.
 
-In the Azure Portal, select Client-01 -> Networking -> Network interface and click on DNS servers
+First, in the *Azure Portal*, go to the **Client VM**, then go to the ***Networking*** tab and click on the ***Network Interface***.
 
-<img width="735" alt="dns servers" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/13292c41-67f1-4212-95c4-084ac2ec0751">
-
-
-
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-<p><strong>Select a custom DNS server and type in the private ip address of DC-01 and restart Client-01</strong></p>
-
-<img width="356" alt="dns servers2" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/d7ec7764-9fcd-4d46-8962-f536bcb1007d">
-
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-
-<p><strong> Now log back in to Client-01 using your original admin credentials. Click start and go to Settings > Rename this PC (advanced) > Change and add “mydomain.com” and login with the admin credentials previously created (jane_admin) </strong></p>
-
-<img width="297" alt="remote desktop first login" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/97df566d-84c9-40d2-88b1-769f79af10a6">
-
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/f721f2cd-57b4-4859-8d4f-ef7458fc836c" height="60%" width="60%" alt="9"/><br />
 <br>
 
-<p> <strong>Once Client-01 has been added, the VM will restart.</strong></p>
+Next, go to the **DNS Servers** tab and create a ***custom DNS Server***.
 
+Add a custom server using the *Domain Controller's Private IP address*.
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
+Example Below:
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/0bffe71f-6738-4262-8fbc-b7cfe1bcb396" height="60%" width="60%" alt="9"/><br />
+<br>
+
+Now click ***Save***.
+
+Next go back to the **Client VM** and click ***Restart*** in the *Overview tab*. 
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/a8b568af-86cc-483e-a80c-0bab61f249e2" height="80%" width="80%" alt="9"/><br />
+<br>
+
+Once the Client is restarted:
+
+🡪 Login to the Client with ***Remote Desktop*** as the **Admin Account** created (***Tucker Smith*** in this case).
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/7dc19edc-c69c-4b8b-9c84-4afea551f703" height="50%" width="50%" alt="9"/><br />
+<br>
+
+After login in:
+
+Go to **Settings 🡪 System 🡪 About** and click on ***Rename this PC (advanced)***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/19aec300-b816-4a43-81d9-0b26828c90ab" height="80%" width="80%" alt="9"/><br />
+<br>
+
+Now Click on "***Change...***"
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/425dde87-0b5a-45f5-87f2-9eae099c65bd" height="50%" width="50%" alt="9"/><br />
+<br>
+
+Now check the bubble ⦿ next to ***Domain*** then type in the *Domain Name* (**Your own domain name**).
+
+There should be a window that pops up for a login 🡪 Use the admin previously created to login.
+
+Example below:
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/697f46b6-b338-4e0a-a037-f14521d63f45" height="80%" width="80%" alt="9"/><br 
+                                                                                                                                                               
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/a2dcdf55-a180-4731-9088-384dd8eb3cfb" height="40%" width="40%" alt="9"/><br />
+
+✅ Success.
+
+The VM will now restart after a short period.
+<br>
+<br>
+<br>
+
 
 <h3>&#9316; Setup Remote Desktop for non-administrative users </h3>
 
