@@ -364,7 +364,7 @@ Go back to **Server Manager 🡪 Tools 🡪 Active Directory Users and Computers
 
 Under the Domain container, go to the **Computers** tab ⟶ it should show that the **Client** has been added to the list.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/78e35fd9-c8b1-4ff2-9d92-d259697b033b" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/2ddfd99c-5ca8-4d66-b6ad-96d7e3d9bfc1" height="80%" width="80%" alt="9"/><br />
 <br>
 
 Now, log into the **Client** as the *Admin User* created and go to **System Settings 🡪 Remote Desktop**.
@@ -373,18 +373,18 @@ Click on ***Select users that can remotely access this PC***.
 
 Next click ***Add***.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/72f37e50-337d-4f5c-a849-c5d0745c3097" height="80%" width="80%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/e0c247c2-2469-4d15-afda-2e4118204e6c" height="80%" width="80%" alt="9"/><br />
 <br>
 
 In the box at the bottom: type in "***Domain Users***" and click on ***Check Names***.
 
 Next click ***OK***.
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/38b39f41-9ebf-4df2-a887-ae0dcc81ee6a" height="60%" width="60%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/1d4d5e7d-14f0-4203-b819-46da88d3fc93" height="60%" width="60%" alt="9"/><br />
 <br>
 
 
-This will allow normal users to login to the **Client VM**.>
+This will allow normal users to login to the **Client VM**.
 <br>
 <br>
 <br>
