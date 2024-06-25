@@ -356,28 +356,55 @@ The VM will now restart after a short period.
 
 
 <h3>5️⃣ Setup Remote Desktop for Non-Administrative Users </h3>
-
-- Log back into Client-01 using jane_admin and open Settings > Remote Desktop> User Accounts and click “Select users that can remotely access this PC”
-- Add Domain Users
-
 <br>
 
-<img width="343" alt="domain users" src="https://github.com/kirkgacias/ad-deployment-configuration/assets/158519921/04eaffe2-1fa3-4c4c-a327-8ea5b63e2c24">
+Now, log into the Domain Controller.
 
-<p><strong>This will allow normal users to login to Client-01</strong></p>
+Go back to **Server Manager 🡪 Tools 🡪 Active Directory Users and Computers**.
 
+Under the Domain container, go to the **Computers** tab ⟶ it should show that the **Client** has been added to the list.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/78e35fd9-c8b1-4ff2-9d92-d259697b033b" height="80%" width="80%" alt="9"/><br />
 <br>
 
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
-<p><strong>.</strong></p>
+Now, log into the **Client** as the *Admin User* created and go to **System Settings 🡪 Remote Desktop**.
+
+Click on ***Select users that can remotely access this PC***.
+
+Next click ***Add***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/72f37e50-337d-4f5c-a849-c5d0745c3097" height="80%" width="80%" alt="9"/><br />
+<br>
+
+In the box at the bottom: type in "***Domain Users***" and click on ***Check Names***.
+
+Next click ***OK***.
+
+<img src="https://github.com/franciscovfonseca/Active-Directory-Lab/assets/172988970/38b39f41-9ebf-4df2-a887-ae0dcc81ee6a" height="60%" width="60%" alt="9"/><br />
+<br>
+
+
+This will allow normal users to login to the **Client VM**.>
+<br>
+<br>
+<br>
+<br>
+
 
 
 
 <h2> Final Thoughts </h2>
 
-<p>
-We've successfully concluded the Active Directory Deployment and Configuration phase. Through configuring Active Directory on the Domain Controller, we established our infrastructure by creating a forest, administrator account, and ultimately integrating Client-01 into the domain. In the upcoming project, we'll be generating users and simulating various Active Directory scenarios. </p>
+We've successfully concluded the **Active Directory Deployment and Configuration** phase.
+  
+Through configuring **Active Directory** on the **Domain Controller**, we established our infrastructure by creating a **Forest**, an **Administrator Account**, and ultimately integrating **Client-01** into the Domain.
+
+In the upcoming project, we'll be **Generating Users using Powershell** and simulating various Active Directory scenarios.
+
+<br>
+<br>
+<br>
+
 
 
 
