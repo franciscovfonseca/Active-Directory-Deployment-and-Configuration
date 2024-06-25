@@ -320,7 +320,7 @@ Once the Client is restarted:
 
 🡪 Login to the Client with ***Remote Desktop*** as the **Admin Account** created (***Tucker Smith*** in this case).
 
-<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/3cd12607-36c3-4817-9de9-32c86bfe7ad6" height="50%" width="50%" alt="9"/><br />
+<img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/ca8c0f68-811f-46d9-b0af-a887ceadbdec" height="50%" width="50%" alt="9"/><br />
 <br>
 
 After login in:
