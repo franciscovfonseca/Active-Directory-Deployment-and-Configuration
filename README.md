@@ -18,7 +18,7 @@ This project is designed to impart a fundamental understanding of Active Directo
 
 <h2>Prerequisites</h2>
 
-<a href="https://github.com/franciscovfonseca/Active-Directory-and-Azure-Setup/blob/main/README.md"> Preliminary Setup for Active Directory and Network Traffic Analysis between Azure VMs </a>
+- <a href="https://github.com/franciscovfonseca/Active-Directory-and-Azure-Setup/blob/main/README.md"> Preliminary Setup for Active Directory and Network Traffic Analysis between Azure VMs </a>
 
 <br>
 
