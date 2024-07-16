@@ -1,6 +1,12 @@
+<br>
+
 <p align="center">
-<img src="https://i.imgur.com/pU5A58S.png" alt="Microsoft Active Directory Logo"/>
-</p>
+<img width="700" src="https://github.com/user-attachments/assets/9b6b0a51-6411-4e01-96c5-1bb31e6fd986" alt="Microsoft Active Directory Logo"/>
+<br>
+
+<br>
+
+<br>
 
 <h1>Active Directory Deployment and Configuration </h1>
 
@@ -18,7 +24,7 @@ This project is designed to impart a fundamental understanding of Active Directo
 
 <h2>Prerequisites</h2>
 
-- <a href="https://github.com/franciscovfonseca/Active-Directory-and-Azure-Setup/blob/main/README.md"> Preliminary Setup for Active Directory and Network Traffic Analysis between Azure VMs </a>
+- <a href="https://github.com/franciscovfonseca/Active-Directory-and-Azure-Setup/blob/main/README.md"> Active Directory Setup & Network Traffic Analysis between Azure VMs </a>
 
 <br>
 
