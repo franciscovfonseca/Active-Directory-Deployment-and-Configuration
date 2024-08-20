@@ -13,9 +13,9 @@
 <br>
 
 
-Building on the first project that set up our simulated Active Directory environment, we now move to the next step in our tutorial series.
+Building on the first project where we set up our simulated Active Directory environment ➜ we now move to the next step in our tutorial series.
   
-Welcome to the "Active Directory Deployment and Configuration" project, where we explore the details of deploying and refining an Active Directory system.
+Welcome to the **"Active Directory Deployment and Configuration"** project, where we explore the details of deploying and refining an Active Directory system.
 
 This project is designed to impart a fundamental understanding of Active Directory services, emphasizing key aspects such as installation, forest creation, user account administration, domain integration, and customized Remote Desktop access.
 
@@ -31,23 +31,23 @@ This project is designed to impart a fundamental understanding of Active Directo
 
 <h2>Key Objectives</h2>
 
-<h3>🟢 Active Directory Installation</h3>
+<h3>✅ Active Directory Installation</h3>
 
 -  Configure and install Active Directory services on the designated Domain Controller virtual machine.
 
-<h3>🟢 Forest Creation</h3>
+<h3>✅ Forest Creation</h3>
 
 - Establish a new Active Directory forest.
 
-<h3>🟢 Administrator Account Creation</h3>
+<h3>✅ Administrator Account Creation</h3>
 
 - Create and administer user accounts with administrative privileges for effective management of the Active Directory environment.
 
-<h3>🟢 Domain Joining</h3>
+<h3>✅ Domain Joining</h3>
 
 - Integrate the Client-01 virtual machine into the established domain, ensuring seamless communication with the Active Directory infrastructure.
 
-<h3>🟢 Remote Desktop Setup</h3>
+<h3>✅ Remote Desktop Setup</h3>
 
 - Configure Remote Desktop access specifically tailored for non-administrative users, enhancing user accessibility while maintaining security protocols.
 
@@ -78,12 +78,11 @@ This project is designed to impart a fundamental understanding of Active Directo
 
 
 
-<h2>Configuration Steps</h2>
+<h1>Configuration Steps</h1>
 
-<h3>1️⃣ Install Active Directory in DC-01</h3>
-
+<details close> 
+<summary> <h2>1️⃣ Install Active Directory in DC-01</h2> </summary>
 <br>
-
 
 Go to the **Domain Controller DC-01** and in ***Server Manager*** dashboard click on ***Add roles and features***.
 
@@ -131,15 +130,13 @@ Once it says "***Configuration required. Installation succeeded on DC.***" 🡪 
 <img width="736" alt="AD-setup" src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/93374b1a-1dbc-4b86-bba6-37e7a9cdd693">
 
 <br>
-<br>
-<br>
 
+  </details>
 
 <h2></h2>
 
-
-<h3>2️⃣ Promote DC-01 to Domain Controller </h3>
-
+<details close> 
+<summary> <h2>2️⃣ Promote DC-01 to Domain Controller </h2> </summary>
 <br>
 
 
@@ -211,16 +208,14 @@ Once it is rebooted 🡪 Log back in to the **Domain Controller** with the ***Do
 
 <img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/1da11dd5-3fbb-45a0-a86a-f9763e0872f9" height="55%" width="55%" alt="9"/><br />
 
+<br>
 
-
-<br>
-<br>
-<br>
+  </details>
 
 <h2></h2>
 
-
-<h3>3️⃣ Creating an Admin in Active Directory </h3>
+<details close> 
+<summary> <h2>3️⃣ Creating an Admin in Active Directory </h2> </summary>
 <br>
 
 Once logged in: using Server Manager 🡪 click on **Tools** in the top-right corner.
@@ -290,13 +285,15 @@ Now, click ***Apply***.
 Now logout of the **Domain Controller** and re-login as the **User** just created (***Tucker Smith***).
 
 <img src="https://github.com/franciscovfonseca/Active-Directory-Deployment-and-Configuration/assets/172988970/8410c255-bde4-4019-b2ef-6bd47f73dc75" height="50%" width="50%" alt="9"/><br />
+
 <br>
-<br>
-<br>
+
+  </details>
 
 <h2></h2>
 
-<h3>4️⃣ Join Client-01 to Domain </h3>
+<details close> 
+<summary> <h2>4️⃣ Join Client-01 to Domain </h2> </summary>
 <br>
 
 For *Client-01* to join the *Domain Controller*, we first have to set its **DNS Server** as **DC-01’s Private IP Address**.
@@ -354,14 +351,15 @@ Example below:
 ✅ Success.
 
 The VM will now restart after a short period.
+
 <br>
-<br>
-<br>
+
+  </details>
 
 <h2></h2>
 
-
-<h3>5️⃣ Setup Remote Desktop for Non-Administrative Users </h3>
+<details close> 
+<summary> <h2>5️⃣ Setup Remote Desktop for Non-Administrative Users </h2> </summary>
 <br>
 
 Now, log into the Domain Controller.
@@ -391,15 +389,20 @@ Next click ***OK***.
 
 
 This will allow normal users to login to the **Client VM**.
-<br>
-<br>
-<br>
+
 <br>
 
+<br>
 
+  </details>
 
+<h2></h2>
 
-<h2> Final Thoughts </h2>
+<br>
+
+<br>
+
+<h1> Final Thoughts </h1>
 
 We've successfully concluded the **Active Directory Deployment and Configuration** phase.
   
