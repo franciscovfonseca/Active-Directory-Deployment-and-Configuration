@@ -8,10 +8,13 @@
 
 <br>
 
-<h1>Active Directory Deployment and Configuration </h1>
-
+<h1 align="center">Active Directory Deployment and Configuration</h1> 
 <br>
 
+<p align="center">
+<img src="https://github.com/user-attachments/assets/5d4b8c68-d1a6-4a4e-93e3-d8b8602d9123" height="85%" width="85%" alt="9"/><br />
+</p>
+<br />
 
 Building on the first project where we set up our simulated Active Directory environment ➜ we now move to the next step in our tutorial series.
   
